@@ -25,6 +25,8 @@ enum charybdis_keymap_layers {
 };
 
 #define NAV MO(L_NAV)
+#define NUM MO(L_NUM)
+#define MOUSE MO(L_MOUSE)
 // #define SYM MO(L_SYM)
 
 // clang-format off
@@ -79,6 +81,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 // clang-format on
 
-layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, LAYER_NAV, LAYER_SYM, LAYER_NUM);
+layer_state_t layer_state_set_user(layer_state_t state){
+    return update_tri_layer_state(state, L_NAV, L_NUM, L_MOUSE);
 }
