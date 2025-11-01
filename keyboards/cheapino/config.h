@@ -26,12 +26,11 @@
 
 
 // Pick good defaults for enabling homerow modifiers
-#define TAPPING_TERM 230
+#define TAPPING_TERM 150
 
 
 #define WS2812_DI_PIN GP16 // The pin connected to the data pin of the LEDs
-#define RGBLIGHT_LED_COUNT 1                     // The number of LEDs connected
-
+#define RGBLIGHT_LED_COUNT 1 // The number of LEDs connected
 
 #define MAX_DEFERRED_EXECUTORS 32
 
@@ -39,5 +38,5 @@
 
 #define RGBLIGHT_DEFAULT_HUE 128 // Sets the default hue value, if none has been set
 #define RGBLIGHT_DEFAULT_SAT 128 // Sets the default saturation value, if none has been set
-#define RGBLIGHT_DEFAULT_VAL 32 // Sets the default brightness value, if none has been set
-                                   //
+#define RGBLIGHT_DEFAULT_VAL 1 // Sets the default brightness value, if none has been set
+

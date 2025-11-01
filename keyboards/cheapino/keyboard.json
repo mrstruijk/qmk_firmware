@@ -10,7 +10,7 @@
         "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true
+        "nkro": false
     },
     "community_layouts": ["split_3x5_3"],
     "matrix_pins": {
@@ -37,7 +37,7 @@
         "device_version": "1.0.0",
         "pid": "0x0000",
         "vid": "0xFEE3",
-        "force_nkro": true
+        "force_nkro": false
     },
     "layouts": {
         "LAYOUT_split_3x5_3": {
