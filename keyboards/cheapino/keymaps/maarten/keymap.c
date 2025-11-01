@@ -24,7 +24,7 @@ enum cheapino_keymap_layers {
     L_MOUSE,
 };
 
-#define NAV MO(LAYER_NAV)
+#define NAV MO(L_NAV)
 #define NUM MO(L_NUM)
 #define MOUSE MO(L_MOUSE)
 
