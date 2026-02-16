@@ -22,7 +22,7 @@ void turned(bool clockwise) {
     }
     // L_MOUSE (3): Scroll up/down
     else if (IS_LAYER_ON(3)) {
-        tap_code(clockwise ? KC_WH_U : KC_WH_D);
+        tap_code(clockwise ? MS_WHLD : MS_WHLU);
     }
     // L_NUM (2): Brightness control
     else if (IS_LAYER_ON(2)) {

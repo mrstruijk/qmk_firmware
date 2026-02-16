@@ -192,7 +192,7 @@ Creating load file for flashing: .build/cheapino_maarten.hex                    
 
 Size after:
    text	   data	    bss	    dec	    hex	filename
-      0	  38640	      0	  38640	   96f0	cheapino_maarten.uf2
+      0	  38632	      0	  38632	   96e8	cheapino_maarten.uf2
 
 Flashing for bootloader: [0;34mrp2040[0m
 Waiting for drive to deploy...
