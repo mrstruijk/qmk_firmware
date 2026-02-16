@@ -4,28 +4,15 @@ Deleting .build/ ... done.
 Ψ Compiling keymap with gmake -r -R -f builddefs/build_keyboard.mk -s flash KEYBOARD=cheapino KEYMAP=maarten KEYBOARD_FILESAFE=cheapino TARGET=cheapino_maarten VERBOSE=false COLOR=true SILENT=false QMK_BIN="qmk"
 
 
-⚠ cheapino: Feature nkro is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True, 'caps_word': True, 'rgblight': True, 'deferred_exec': True}) and rules.mk (False). The rules.mk value wins.
-⚠ cheapino: Feature nkro is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True, 'caps_word': True, 'rgblight': True, 'deferred_exec': True}) and rules.mk (False). The rules.mk value wins.
 Generating: .build/obj_cheapino_maarten/src/info_deps.d                                             [32;01m[OK][0m
-⚠ cheapino: Feature nkro is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True, 'caps_word': True, 'rgblight': True, 'deferred_exec': True}) and rules.mk (False). The rules.mk value wins.
-⚠ cheapino: Feature nkro is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True, 'caps_word': True, 'rgblight': True, 'deferred_exec': True}) and rules.mk (False). The rules.mk value wins.
 arm-none-eabi-gcc (Fedora 15.2.0-1.fc43) 15.2.0
 Copyright (C) 2025 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-Generating: .build/obj_cheapino_maarten/src/info_config.h                                           [33;01m[WARNINGS][0m
- | 
- | ⚠ cheapino: Feature nkro is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True, 'caps_word': True, 'rgblight': True, 'deferred_exec': True}) and rules.mk (False). The rules.mk value wins.
- | 
-Generating: .build/obj_cheapino_maarten/src/default_keyboard.c                                      [33;01m[WARNINGS][0m
- | 
- | ⚠ cheapino: Feature nkro is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True, 'caps_word': True, 'rgblight': True, 'deferred_exec': True}) and rules.mk (False). The rules.mk value wins.
- | 
-Generating: .build/obj_cheapino_maarten/src/default_keyboard.h                                      [33;01m[WARNINGS][0m
- | 
- | ⚠ cheapino: Feature nkro is specified in both info.json ({'bootmagic': True, 'command': False, 'console': False, 'extrakey': True, 'mousekey': True, 'nkro': True, 'caps_word': True, 'rgblight': True, 'deferred_exec': True}) and rules.mk (False). The rules.mk value wins.
- | 
+Generating: .build/obj_cheapino_maarten/src/info_config.h                                           [32;01m[OK][0m
+Generating: .build/obj_cheapino_maarten/src/default_keyboard.c                                      [32;01m[OK][0m
+Generating: .build/obj_cheapino_maarten/src/default_keyboard.h                                      [32;01m[OK][0m
 Compiling: keyboards/cheapino/encoder.c                                                             [32;01m[OK][0m
 Compiling: keyboards/cheapino/ghosting.c                                                            [32;01m[OK][0m
 Compiling: keyboards/cheapino/matrix.c                                                              [32;01m[OK][0m
@@ -205,9 +192,9 @@ Creating load file for flashing: .build/cheapino_maarten.hex                    
 
 Size after:
    text	   data	    bss	    dec	    hex	filename
-      0	  38348	      0	  38348	   95cc	cheapino_maarten.uf2
+      0	  38640	      0	  38640	   96f0	cheapino_maarten.uf2
 
 Flashing for bootloader: [0;34mrp2040[0m
 Waiting for drive to deploy...
 Flashing /run/media/mrstruijk/RPI-RP2 (RPI-RP2)
-Wrote 76800 bytes to /run/media/mrstruijk/RPI-RP2/NEW.UF2
+Wrote 77312 bytes to /run/media/mrstruijk/RPI-RP2/NEW.UF2
