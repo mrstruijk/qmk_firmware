@@ -16,14 +16,25 @@ void clicked(void) {
 }
 
 void turned(bool clockwise) {
-    if (IS_LAYER_ON(6)) {
+    // L_FUN (4): Volume control
+    if (IS_LAYER_ON(4)) {
         tap_code(clockwise ? KC_VOLU : KC_VOLD);
-    } else if (IS_LAYER_ON(3)) {
+    }
+    // L_MOUSE (3): Scroll up/down
+    else if (IS_LAYER_ON(3)) {
+        tap_code(clockwise ? KC_WH_U : KC_WH_D);
+    }
+    // L_NUM (2): Brightness control
+    else if (IS_LAYER_ON(2)) {
+        tap_code(clockwise ? KC_BRIU : KC_BRID);
+    }
+    // L_NAV (1): Tab switching
+    else if (IS_LAYER_ON(1)) {
         tap_code16(clockwise ? LCTL(KC_TAB) : LCTL(LSFT(KC_TAB)));
-    } else if (IS_LAYER_ON(5)) {
-        tap_code16(clockwise ? LGUI(KC_Y) : LGUI(KC_Z));
-    } else {
-        tap_code16(clockwise ? KC_PGDN : KC_PGUP);
+    }
+    // L_BASE (0): Volume control (default)
+    else {
+        tap_code(clockwise ? KC_VOLU : KC_VOLD);
     }
 }
 
