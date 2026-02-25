@@ -1,6 +1,3 @@
-// Copyright 2024 Maarten Struijk
-// SPDX-License-Identifier: GPL-2.0
-
 #include QMK_KEYBOARD_H
 
 enum cantor_keymap_layers {
