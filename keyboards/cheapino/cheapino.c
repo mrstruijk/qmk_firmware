@@ -44,24 +44,24 @@ void keyboard_post_init_user(void) {
 }
 
 // Make the builtin RGB led show different colors per layer:
-// This seemed like a good idea but turned out pretty annoying,
-// to me at least... Uncomment the lines below to enable
+// Kanagawa color palette
+// L_BASE (0): Wave Blue
+// L_NAV (1): Spring Green
+// L_NUM (2): Autumn Yellow
+// L_MOUSE (3): Sakura Pink
+// L_FUN (4): Winter Purple
 uint8_t get_hue(uint8_t layer) {
     switch (layer) {
-        case 6:
-            return 169;
-        case 5:
-            return 43;
-        case 4:
-            return 85;
-        case 3:
-            return 120;
-        case 2:
-            return 180;
-        case 1:
-            return 220;
-        default:
-            return 0;
+        case 4:  // L_FUN - Winter Purple
+            return 135;  // ~270° in 0-255 scale
+        case 3:  // L_MOUSE - Sakura Pink
+            return 220;  // ~330° in 0-255 scale
+        case 2:  // L_NUM - Autumn Yellow
+            return 27;   // ~40° in 0-255 scale
+        case 1:  // L_NAV - Spring Green
+            return 80;   // ~120° in 0-255 scale
+        default: // L_BASE - Wave Blue
+            return 133;  // ~200° in 0-255 scale
     }
 }
 
@@ -71,4 +71,3 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     uint8_t hue = get_hue(get_highest_layer(state));
     rgblight_sethsv(hue, sat, val);
     return state;
-}
