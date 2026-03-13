@@ -71,3 +71,4 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     uint8_t hue = get_hue(get_highest_layer(state));
     rgblight_sethsv(hue, sat, val);
     return state;
+}
