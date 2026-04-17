@@ -7,18 +7,12 @@
 #define SERIAL_USART_TX_PIN B6     // USART TX pin
 #define SERIAL_USART_RX_PIN B7     // USART RX pin
 
-/*
- * Feature disable options
- *  These options are also useful to firmware size reduction.
- */
+#define TAPPING_TERM 150
 
-/* disable debug print */
-//#define NO_DEBUG
+// Mouse speed settings - slower default, faster with modifier
+#define MOUSEKEY_DELAY 20           // Delay before mouse starts moving (lower = faster start)
+#define MOUSEKEY_INTERVAL 20        // Time between mouse movements (lower = faster)
+#define MOUSEKEY_MAX_SPEED 5        // Max speed (default is 10, we're using 5 for slower)
+#define MOUSEKEY_ACCEL_ENABLE       // Enable acceleration
+#define MOUSEKEY_ACCELERATED_MAX 10 // Max speed when accelerated (faster option)
 
-/* disable print */
-//#define NO_PRINT
-
-/* disable action features */
-//#define NO_ACTION_LAYER
-//#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
