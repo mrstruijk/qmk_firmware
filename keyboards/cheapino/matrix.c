@@ -116,7 +116,11 @@ void matrix_init_custom(void) {
     // initialize key pins
     unselect_cols();
     unselect_rows();
+<<<<<<< HEAD
     debounce_init();
+=======
+    debounce_init(MATRIX_ROWS);
+>>>>>>> tompi/cheapinov2
 }
 
 void store_old_matrix(matrix_row_t current_matrix[]) {
