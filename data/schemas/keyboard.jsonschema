@@ -96,6 +96,7 @@
                 "STM32L442",
                 "STM32L443",
                 "GD32VF103",
+                "FS026",
                 "WB32F3G71",
                 "WB32FQ95",
                 "AT32F415",
@@ -330,6 +331,17 @@
                             "minimum": 0
                         }
                     }
+                }
+            }
+        },
+        "dynamic_keymap": {
+            "type": "object",
+            "properties": {
+                "eeprom_max_addr": {"$ref": "./definitions.jsonschema#/unsigned_int"},
+                "layer_count": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 32
                 }
             }
         },
